@@ -12,4 +12,12 @@
         let variable = prompt("Entrez un nombre : ");
         alert(variable);
 
-#
+# Boucle possible
+        switch(valeur){
+            case "":
+                console.log("Ok");
+                break;
+            default:
+                console.log("pas Ok");
+        }
+        
