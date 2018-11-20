@@ -1,0 +1,15 @@
+# Définir une variable :
+        let, var, (const)
+
+# Afficher quelque chose dans la console du navigateur :
+        console.log();
+
+# Demander une chaine de caractère à l'utilisateur grace à une boite message :
+        let variable = prompt("Question ?");
+    Afficher ensuite :
+        alert(variable);
+    Pour demander un nombre utilisable :
+        let variable = prompt("Entrez un nombre : ");
+        alert(variable);
+
+#
