@@ -3,14 +3,18 @@
 
 # Afficher quelque chose dans la console du navigateur :
         console.log();
+        Console( "coucou"+ nom );
 
 # Demander une chaine de caractère à l'utilisateur grace à une boite message :
         let variable = prompt("Question ?");
-    Afficher ensuite :
+
+    > Afficher ensuite :
         alert(variable);
-    Pour demander un nombre utilisable :
+
+    > Pour demander un nombre utilisable :
         let variable = prompt("Entrez un nombre : ");
         alert(variable);
+________________________________________________________________________________
 
 # Boucle possible
         switch(valeur){
@@ -20,4 +24,62 @@
             default:
                 console.log("pas Ok");
         }
-        
+
+# Teste de Boucle
+        === : égal à
+        !== : différent à
+         || : Ou
+         && : Et
+________________________________________________________________________________
+
+# Taille d'une chaine de caractères :
+        chaine.length
+
+# Convertir une chaine de caractère en majuscule
+        chaine.toUpperCase();
+
+# Convertir une chaine de caractère en minuscule
+        chaine.toLowerCase();
+
+# Chaine de caractères = tableau ?
+        chaine[0] = chaine.charAt(0)
+________________________________________________________________________________
+
+# Créer un objet en javascript ( Objet =~ structure en C )
+
+    > Première manière :
+        var MonObjet = {
+          type : long;
+          couleur : bleu;
+          marque : bic
+        };
+
+    > Deuxième manière avec un constructeur :
+        function FonctionObjet( pType, pCouleur, pMarque ){
+          type : pType;
+          couleur : pCouleur;
+          marque : pMarque
+        }
+        var MonObjet = new FonctionObjet( long, bleu, bic );
+
+# Faire référence à une caractéristique d'un objet :
+        Avec un "." :   MonObjet.type
+        Avec [' ']  :   MonObjet['type']
+
+# Dans javascript, il y a même la possibilité de rajouter un caractéristique plus tard :
+        MonObjet.prix = 30 ;
+
+# On peut rajouter une fonction directement dans les {} de la création de l'objet :
+        var MonObjet = {
+            type : long;
+            couleur : bleu;
+            marque : bic.
+            phrase1 : function (pPrix) {
+              var decription = "Il est "+ this.type + " et il coûte " + pPrix ;
+              return decritpion;
+            }
+        }
+        MonObjet.Phrase2 : function( pPrix ){ return "ou alors" + pPrix ; }
+
+        console.log( MonObjet.phrase1(45) );      //Affiche : "Il est long et il coûte 45"
+        console.log( MonObjet.Phrase2(50) );      //Affiche : "ou alors 50"
