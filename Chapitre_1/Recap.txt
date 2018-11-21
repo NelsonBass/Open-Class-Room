@@ -81,5 +81,5 @@ ________________________________________________________________________________
         }
         MonObjet.Phrase2 : function( pPrix ){ return "ou alors" + pPrix ; }
 
-        console.log( MonObjet.phrase1(45) );      //Affiche : "Il est long et il coûte 45".
-        console.log( MonObjet.Phrase2(50) );      //Affiche : "ou alors 50".
+        console.log( MonObjet.phrase1(45) );      //Affiche : "Il est long et il coûte 45"
+        console.log( MonObjet.Phrase2(50) );      //Affiche : "ou alors 50"
